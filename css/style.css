@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.container {
+    position: relative;
+    margin: 0 100px;
+    width: 1600px;
+}
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    letter-spacing: 1px;
+}
+header h1 {
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    top: 15px;
+}
+header span {
+    color: aquamarine;
+}
+header menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+header menu ul li a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 23px;
+}
+section {
+    height: 700px;
+}
+.gradient {
+    background: linear-gradient(to bottom, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+}
