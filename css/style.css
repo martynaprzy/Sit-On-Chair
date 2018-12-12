@@ -16,6 +16,7 @@ header {
     letter-spacing: 1px;
 }
 menu {
+    height: 80px;
     display: flex;
     justify-content: space-between;
 }
@@ -40,6 +41,53 @@ header menu ul li a{
     text-decoration: none;
     padding: 20px;
     font-size: 23px;
+}
+ul.hiddenlist {
+    list-style-type: none;
+    display: block;
+    border-radius: 10px;
+    background: black;
+    margin: 20px 0;
+}
+/*ul.hiddenlist li:after {*/
+    /*content: '';*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*border: 18px solid transparent;*/
+    /*border-bottom-color: black;*/
+    /*border-top: 0;*/
+    /*margin-left: -18px;*/
+    /*margin-top: -18px;*/
+/*}*/
+ul.hiddenlist {
+    position: relative;
+    background: black;
+    border-radius: .4em;
+    display: none;
+}
+
+ul.hiddenlist:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 18px solid transparent;
+    border-bottom-color: black;
+    border-top: 0;
+    margin-left: -18px;
+    margin-top: -18px;
+}
+ul.hiddenlist li {
+    color: white;
+    padding: 8px 20px;
+    font-size: 17px;
+}
+li.dropdown:hover ul {
+    display: block;
 }
 .main {
     height: 700px;
@@ -68,7 +116,7 @@ div.main {
     /*position: absolute;*/
     /*right: 100px;*/
     /*top: 50px;*/
-    padding: 120px;
+    padding: 140px;
     text-align: center;
 }
 .blackchair {
@@ -286,4 +334,101 @@ button a {
     font-size: 26px;
     color: #53C6BA;
 }
-
+#form div h2:after {
+    content: "";
+    width: 300px;
+    height: 10px;
+    background-color: #53C6BA;
+    display: block;
+    margin-bottom: 10px;
+}
+#form div h2 {
+    padding: 30px 0;
+}
+div.formbox {
+    display: flex;
+    justify-content: space-between;
+    height: 700px;
+}
+div.formleftpart {
+    width: 60%;
+    height: 500px;
+}
+div.formrightpart {
+    width: 30%;
+    height: 500px;
+}
+div.formleftpart input, textarea {
+    padding: 15px;
+    margin: 0 0 20px 0;
+    font-size: 26px;
+    width: 100%;
+    resize: none;
+    border: 2px solid lightgray;
+    color: lightgray;
+}
+div.formrightpart img {
+    width: 100%;
+}
+div.formrightpart button {
+    color: #F0FAF9;
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    border: 1px solid #53C6BA;
+}
+div.formrightpart {
+    font-size: 25px;
+    color: grey;
+    padding: 20px;
+}
+.checked {
+    position: absolute;
+    left: -9999px;
+}
+label {
+    display: inline-block;
+    border: 1px solid lightgray;
+    padding: 2px;
+}
+#agree {
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    padding: 10px;
+}
+#agree label {
+    width: 20%;
+    margin: 10px;
+}
+#agree input {
+    width: 70%;
+}
+div.footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 26px;
+    color: darkgray;
+    padding: 20px;
+}
+div.rightpartoffooter {
+    display: flex;
+    justify-content: space-between;
+}
+div.rightpartoffooter h3 {
+    color: darkgray;
+    margin-left: 160px;
+}
+div.rightpartoffooter h3 span {
+    color: gray;
+}
+div.circles {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+div.circles img {
+    width: 40px;
+    height: 40px;
+}

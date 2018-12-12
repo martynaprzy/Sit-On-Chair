@@ -12,7 +12,13 @@
         <menu>
             <h2>SIT <span>ON</span> CHAIR</h2>
             <ul>
-                <li><a href="#">O FIRMIE</a></li>
+                <li class="dropdown"><a href="#">O FIRMIE</a>
+                <ul class="hiddenlist">
+                    <li>Aktualności</li>
+                    <li>Nasz team</li>
+                    <li>Historia</li>
+                </ul>
+                </li>
                 <li><a href="#">GALERIA</a></li>
                 <li><a href="#">KONTAKT</a></li>
                 <!--relative do menu-->
@@ -157,9 +163,29 @@
         <!--gradient generator-->
     </div>
 </section>
-<section>
-    <div></div>
-    <div></div>
+<section id="form" class="container">
+    <div>
+        <h2>KONTAKT</h2>
+    </div>
+    <div class="formbox">
+        <div class="formleftpart">
+            <form>
+                <input type="text" name="name" value="Imię"><br>
+                <input type="email" name="email" value="Email"><br>
+                <textarea name="textarea" rows="10" cols="60" placeholder="Wiadomość">Wiadomość</textarea>
+            </form>
+        </div>
+        <div class="formrightpart">
+            <img src="images/red_chair.png">
+            <div id="agree">
+                <label><img src="images/form_ok.jpg"></label>
+            <input type="radio" name="zgoda" class="checked">Zgadzam się na przetwarzanie danych osobowych</input>
+            </div>
+            <button class="button">WYŚLIJ</button>
+            </div>
+
+        </div>
+    </div>
     <!--form-->
     <!--po najechaniu tlo w zaznaczniku ptaszku-->
     <!--formularz podzielic na dwie kolumny-->
@@ -170,6 +196,18 @@
     <!--button ostylowany-->
 </section>
 <footer>
+    <div class="footer container">
+        <div class="leftpartoffooter">
+            <p>Copyright 2018 | All Rights Reserved - Sit On Chair</p>
+        </div>
+        <div class="rightpartoffooter">
+            <div class="circles"><img src="images/flickr.png"></div>
+            <div class="circles"><img src="images/vimeo.png"></div>
+            <div class="circles"><img src="images/pinterest.png"></div>
+            <div class="circles"><img src="images/twitter.png"></div>
+            <h3>SIT <span>ON</span> CHAIR</h3>
+        </div>
+    </div>
     <!--container, ktory to trzyma-->
     <!--2 divy wszystko do prawej w 2.-->
     <!--kotwica z id pierwszej sekcji sit on chair-->
