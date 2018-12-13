@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .container {
@@ -15,39 +15,35 @@ header {
     display: flex;
     letter-spacing: 1px;
 }
-menu {
-    height: 80px;
+nav {
     display: flex;
+    padding: 20px;
     justify-content: space-between;
 }
 header h2 {
     width: auto;
     height: auto;
-    padding: 20px;
 }
 header span {
     color: #53C6BA;
 }
-header menu ul {
+header nav ul {
     list-style-type: none;
-    display: inline-block;
-    float: right;
+    /*display: inline-block;*/
     display: flex;
     /*justify-content: flex-end;*/
 }
-header menu ul li a{
-    display: flex;
+header nav ul li a{
     color: white;
     text-decoration: none;
-    padding: 20px;
+    padding: 22px;
     font-size: 23px;
 }
 ul.hiddenlist {
     list-style-type: none;
     display: block;
-    border-radius: 10px;
     background: black;
-    margin: 20px 0;
+    z-index: 2;
 }
 /*ul.hiddenlist li:after {*/
     /*content: '';*/
@@ -62,33 +58,44 @@ ul.hiddenlist {
     /*margin-top: -18px;*/
 /*}*/
 ul.hiddenlist {
-    position: relative;
+    position: absolute;
+    top: 70px;
+    left: 0px;
     background: black;
     border-radius: .4em;
+    /*visibility: hidden;*/
     display: none;
 }
 
 ul.hiddenlist:after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 50%;
+    top: -18px;
+    left: 0;
+    right: 0;
+    margin: auto;
     width: 0;
     height: 0;
     border: 18px solid transparent;
     border-bottom-color: black;
     border-top: 0;
-    margin-left: -18px;
-    margin-top: -18px;
 }
 ul.hiddenlist li {
     color: white;
     padding: 8px 20px;
     font-size: 17px;
 }
-li.dropdown:hover ul {
+li.dropdown {
+    position: relative;
+}
+li.dropdown:hover .hiddenlist {
+    /*visibility: visible;*/
     display: block;
 }
+
+/*.dropdown:hover .hiddenlist {*/
+    /*height: 200px;*/
+/*}*/
 .main {
     height: 700px;
 }
@@ -116,13 +123,13 @@ div.main {
     /*position: absolute;*/
     /*right: 100px;*/
     /*top: 50px;*/
-    padding: 140px;
+    padding: 180px;
     text-align: center;
 }
 .blackchair {
     width: 700px;
     padding: 100px;
-    margin-left: -50px;
+    margin-left: -10px;
 
 }
 .rightpartofmain h1 {
@@ -130,7 +137,7 @@ div.main {
     letter-spacing: 1px;
 }
 .textnexttomainpic {
-    font-size: 25px;
+    font-size: 22px;
     word-spacing: 1px;
     padding: 30px;
 }
@@ -141,7 +148,10 @@ div.main {
     display: inline-block;
     padding: 10px 50px;
     margin: 5px auto;
-
+    transition: background-color 0.5s ease;
+}
+.button:hover {
+    background: turquoise;
 }
 .button a {
     text-decoration: none;
@@ -153,6 +163,14 @@ div.main {
     color: #53C6BA;
     width: 5%;
     padding: 275px 0;
+}
+#leftarrow a {
+    text-decoration: none;
+    color: #53C6BA;
+}
+#rightarrow a {
+    text-decoration: none;
+    color: #53C6BA;
 }
 
 #rightarrow {
@@ -216,8 +234,8 @@ div.main {
 }
 .allinputs {
     width: 30%;
-    padding: 50px;
-    font-size: 18px;
+    padding: 60px;
+    font-size: 20px;
     letter-spacing: 0.5px;
     box-sizing: border-box;
 }
@@ -288,16 +306,17 @@ h3.plan.suggested {
 div.circle {
     border-radius: 50%;
     border: 3px solid lightgray;
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     margin: auto auto;
     text-align: center;
     font-size: 45px;
-    padding: 15px;
+    padding: 20px;
     background: white;
 }
 div.circle p:first-child {
     font-size: 70px;
+    margin-top: 11px;
 }
 div.circle p:last-child {
     font-size: 20px;
@@ -328,11 +347,20 @@ div.planbox button {
     margin: 0 30%;
     position: absolute;
     bottom: 20px;
+    background-color: #53C6BA;
+
+}
+div.suggested button {
+    background-color: white;
+}
+div.suggested button a {
+    color: #53C6BA;
+
 }
 button a {
     text-decoration: none;
     font-size: 26px;
-    color: #53C6BA;
+    color: white;
 }
 #form div h2:after {
     content: "";
@@ -380,7 +408,7 @@ div.formrightpart button {
 div.formrightpart {
     font-size: 25px;
     color: grey;
-    padding: 20px;
+    /*padding: 20px;*/
 }
 .checked {
     position: absolute;
@@ -410,6 +438,7 @@ div.footer {
     font-size: 26px;
     color: darkgray;
     padding: 20px;
+    margin-bottom: 40px;
 }
 div.rightpartoffooter {
     display: flex;
@@ -417,7 +446,7 @@ div.rightpartoffooter {
 }
 div.rightpartoffooter h3 {
     color: darkgray;
-    margin-left: 160px;
+    margin-left: 140px;
 }
 div.rightpartoffooter h3 span {
     color: gray;

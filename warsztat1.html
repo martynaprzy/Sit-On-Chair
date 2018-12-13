@@ -4,33 +4,35 @@
     <meta charset="UTF-8">
     <link href="css/style.css" rel="stylesheet">
     <title>Warsztat 1</title>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
 <header>
     <div class="container">
-        <menu>
+        <nav>
             <h2>SIT <span>ON</span> CHAIR</h2>
             <ul>
-                <li class="dropdown"><a href="#">O FIRMIE</a>
-                <ul class="hiddenlist">
-                    <li>Aktualności</li>
-                    <li>Nasz team</li>
-                    <li>Historia</li>
-                </ul>
+                <li class="dropdown">
+                    <a href="#">O FIRMIE</a>
+                    <div class="underdrop">
+                         <ul class="hiddenlist">
+                            <li>Aktualności</li>
+                            <li>Nasz team</li>
+                            <li>Historia</li>
+                        </ul>
+                    </div>
                 </li>
                 <li><a href="#">GALERIA</a></li>
                 <li><a href="#">KONTAKT</a></li>
                 <!--relative do menu-->
             </ul>
-        </menu>
+        </nav>
     </div>
 </header>
 <section class="gradient">
     <div class="container">
         <div class="main">
-            <div id="leftarrow">
-                &lt;
+            <div id="leftarrow"><a href="#">&lt;</a>
             </div>
             <div class="leftpartofmain">
                 <img class="blackchair" src="images/black_chair.png">
@@ -44,8 +46,7 @@
                     <a href="#">ZOBACZ WIĘCEJ</a>
                 </div>
             </div>
-            <div id="rightarrow">
-                &gt;
+            <div id="rightarrow"><a href="#">&gt;</a>
             </div>
         </div>
         <!--strzalki-->
@@ -72,7 +73,7 @@
             </div>
         </li>
         <li class="allinputs">
-            <h2>Finds all inputs...</h2>
+            <h2>Finds all inputs</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias amet, aspernatur atque blanditiis eos impedit iste minus, molestias officia possimus quam qui ratione repellat sunt vero voluptate voluptatem voluptates.
             </p>
@@ -181,7 +182,7 @@
                 <label><img src="images/form_ok.jpg"></label>
             <input type="radio" name="zgoda" class="checked">Zgadzam się na przetwarzanie danych osobowych</input>
             </div>
-            <button class="button">WYŚLIJ</button>
+            <button class="button"><a href="#">WYŚLIJ</a></button>
             </div>
 
         </div>
